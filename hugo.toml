@@ -56,7 +56,7 @@ text = """<p class="hidden-sm hidden-xs">Skontaktuj się poprzez +48 512 029 889
 [menu]
 
 [[menu.main]]
-name = "Home"
+name = "STRONA GŁÓWNA"
 identifier = "menu.home"
 url = "/"
 weight = 1
