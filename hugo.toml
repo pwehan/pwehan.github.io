@@ -1,0 +1,102 @@
+baseURL = 'https://ehan.pl/'
+languageCode = 'pl-pl'
+defaultContentLanguage = 'pl'
+title = 'EHAN'
+theme = 'hugo-universal-theme'
+
+pluralizelisttitles = false
+
+[params]
+defaultKeywords = ["ehan", "pw ehan", "andrzej niedźwiedź", "avant", "miniładowarki"]
+defaultDescription = "Przedsiębiorstwo Wielobranżowe EHAN"
+default_sharing_image = "img/sharing-default.png"
+
+about_us = """<p>
+Ładowarki Avant – sprzedaż, serwis, osprzęt i  doradztwo.
+Wysłuchamy, doradzimy w dopasowaniu do Twoich potrzeb miło, sympatycznie, rzeczowo!
+</p>"""
+copyright = "Copyright © 2024 EHAN. All rights reserved."
+
+contact_url = "/contact"
+address = """<p class="text-uppercase"><strong>PW EHAN Andrzej Niedźwiedź</strong>
+<br>Mickiewicza 30
+<br>Narewka
+<br>17-220
+<br>
+<strong>Poland</strong>
+<br>"""
+
+style = 'green'
+facebook_site = "pwehan"
+
+enableGoogleMaps = true
+googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+latitude = "53.243655"
+longitude = "22.929595"
+
+disabled_logo = false
+logo_text = "EHAN"
+logo = "img/logo.jpg"
+logo_small = "img/logo-small.png"
+
+[permalinks]
+blog = "/blog/:year/:month/:day/:filename/"
+
+[params.widgets]
+categories = true
+tags = true
+search = true
+
+[params.topbar]
+enable = true
+text = """<p class="hidden-sm hidden-xs">Skontaktuj się poprzez +48 512 029 889 lub kontakt@ehan.pl.</p>
+  <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+  <a href="mailto:hello@universal.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+  </p>"""
+
+[menu]
+
+[[menu.main]]
+name = "Home"
+identifier = "menu.home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Kontakt"
+identifier = "menu.contact"
+url  = "/contact"
+weight = 2
+
+[[menu.main]]
+name = "Oferta"
+identifier = "menu.products"
+url = "/products"
+weight = 3
+
+[[menu.main]]
+name = "Miniładowarki"
+url = "/miniloaders"
+parent = "menu.products"
+
+[[menu.topbar]]
+weight = 1
+name = "Telefon"
+url = "tel:+48 512 029 887"
+pre = "<i class='fas fa-2x fa-phone'></i>"
+
+[[menu.topbar]]
+weight = 2
+name = "Email"
+url = "mailto:kontakt@ehan.pl"
+pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+[[menu.topbar]]
+weight = 3
+name = "Facebook"
+url = "http://facebook.com/pwehan"
+pre = "<i class='fab fa-2x fa-facebook'></i>"
+
+[params.features]
+enable = true
+cols = 3
