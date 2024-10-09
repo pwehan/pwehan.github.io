@@ -20,8 +20,7 @@ copyright = "Copyright © 2024 EHAN. All rights reserved."
 contact_url = "/contact"
 address = """<p class="text-uppercase"><strong>PW EHAN Andrzej Niedźwiedź</strong>
 <br>Mickiewicza 30
-<br>Narewka
-<br>17-220
+<br>Narewka 17-220
 <br>
 <strong>Poland</strong>
 <br>"""
@@ -100,3 +99,9 @@ pre = "<i class='fab fa-2x fa-facebook'></i>"
 [params.features]
 enable = true
 cols = 3
+
+[params.carouselHomepage]
+enable = true
+auto_play = true
+slide_speed = 2000
+pagination_speed = 1000
