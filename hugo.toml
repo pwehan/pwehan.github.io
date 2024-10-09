@@ -29,7 +29,7 @@ style = 'green'
 facebook_site = "pwehan"
 
 enableGoogleMaps = true
-googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY" # https://github.com/devcows/hugo-universal-theme/blob/b34533c67125ed52e39b21be89871329a4d08141/exampleSite/config.toml#L403
 latitude = "53.243655"
 longitude = "22.929595"
 
