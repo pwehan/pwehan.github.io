@@ -15,7 +15,7 @@ about_us = """<p>
 Ładowarki Avant – sprzedaż, serwis, osprzęt i  doradztwo.
 Wysłuchamy, doradzimy w dopasowaniu do Twoich potrzeb miło, sympatycznie, rzeczowo!
 </p>"""
-copyright = "Copyright © 2024 PW EHAN. <a href='https://github.com/pwehan/pwehan.github.io/blob/main/LICENSE' target='_blank'>MIT License</a>."
+copyright = "Copyright © 2024 PW EHAN. <a href='https://github.com/pwehan/pwehan.github.io/blob/main/LICENSE' target='_blank'>Licencja MIT</a>."
 
 contact_url = "/contact"
 address = """<p class="text-uppercase"><strong>PW EHAN Andrzej Niedźwiedź</strong>
