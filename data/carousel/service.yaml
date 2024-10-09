@@ -1,0 +1,10 @@
+weight: 3
+title: "Serwis mobilny"
+description: >
+  <ul class="list-style-none">
+  <li>naprawy gwarancyjne ładowarek</li>
+  <li>naprawy specjalistyczne hydromotorów</li>
+  <li>naprawy pomp hydraulicznych</li>
+  </ul>
+image: "img/carousel/mechanic_0.jpeg"
+# href: "https://ehan.pl/products/miniloaders"
