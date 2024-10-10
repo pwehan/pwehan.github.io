@@ -7,23 +7,8 @@ theme = 'hugo-universal-theme'
 pluralizelisttitles = false
 
 [params]
-defaultKeywords = ["ehan", "pw ehan", "andrzej niedźwiedź", "avant", "miniładowarki"]
-defaultDescription = "Przedsiębiorstwo Wielobranżowe EHAN"
 default_sharing_image = "img/sharing-default.png"
-
-about_us = """<p>
-Ładowarki Avant – sprzedaż, serwis, osprzęt i  doradztwo.
-Wysłuchamy, doradzimy w dopasowaniu do Twoich potrzeb miło, sympatycznie, rzeczowo!
-</p>"""
-copyright = "Copyright © 2024 PW EHAN. <a href='https://github.com/pwehan/pwehan.github.io/blob/main/LICENSE' target='_blank'>Licencja MIT</a>."
-
-contact_url = "/contact"
-address = """<p class="text-uppercase"><strong>PW EHAN Andrzej Niedźwiedź</strong>
-<br>Mickiewicza 30
-<br>Narewka 17-220
-<br>
-<strong>Poland</strong>
-<br>"""
+copyright = "Copyright © 2024 PW EHAN. <a href='https://github.com/pwehan/pwehan.github.io/blob/main/LICENSE' target='_blank'>MIT License</a>."
 
 style = 'green'
 facebook_site = "pwehan"
@@ -38,59 +23,148 @@ logo_text = "EHAN"
 logo = "img/logo.jpg"
 logo_small = "img/logo-small.png"
 
-[permalinks]
-blog = "/blog/:year/:month/:day/:filename/"
+address = """<p class="text-uppercase"><strong>PW EHAN Andrzej Niedźwiedź</strong>
+<br>Mickiewicza 30
+<br>Narewka 17-220
+<br>
+<strong>Poland</strong>
+<br>"""
 
 [params.widgets]
 categories = true
 tags = true
 search = true
 
-[params.topbar]
+[permalinks]
+blog = "/blog/:year/:month/:day/:filename/"
+
+[languages]
+
+[languages.pl]
+languageName = "Polski"
+contentDir = 'content/pl'
+
+[languages.en]
+languageName = "English"
+contentDir = 'content/en'
+
+[languages.pl.params]
+defaultKeywords = ["ehan", "pw ehan", "andrzej niedźwiedź", "avant", "miniładowarki"]
+defaultDescription = "Przedsiębiorstwo Wielobranżowe EHAN"
+
+about_us = """<p>
+Ładowarki Avant – sprzedaż, serwis, osprzęt i doradztwo.
+Wysłuchamy, doradzimy w dopasowaniu do Twoich potrzeb miło, sympatycznie, rzeczowo!
+</p>"""
+
+contact_url = "/contact"
+
+[languages.pl.params.topbar]
 enable = true
 text = """<p class="hidden-sm hidden-xs">Skontaktuj się poprzez +48 512 029 889 lub kontakt@ehan.pl.</p>
-  <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-  <a href="mailto:hello@universal.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+  <p class="hidden-md hidden-lg"><a href="tel:+48 512 029 889" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+  <a href="mailto:kontakt@ehan.pl" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
   </p>"""
 
-[menu]
+[languages.en.params]
+defaultKeywords = ["ehan", "pw ehan", "andrzej niedźwiedź", "avant", "miniloaders"]
+defaultDescription = "EHAN, MNC."
 
-[[menu.main]]
+about_us = """<p>
+Avant Miniloaders – sales, service, equipment and consulting.
+We will listen and advise you in a way that suits your needs in a nice, friendly and objective manner!
+</p>"""
+
+contact_url = "/en/contact"
+
+[languages.en.params.topbar]
+enable = true
+text = """<p class="hidden-sm hidden-xs">Contact us through +48 512 029 889 or kontakt@ehan.pl.</p>
+  <p class="hidden-md hidden-lg"><a href="tel:+48 512 029 889" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+  <a href="mailto:kontakt@ehan.pl" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+  </p>"""
+
+[languages.pl.menu]
+
+[[languages.pl.menu.main]]
 name = "STRONA GŁÓWNA"
 identifier = "menu.home"
 url = "/"
 weight = 1
 
-[[menu.main]]
+[[languages.pl.menu.main]]
 name = "Kontakt"
 identifier = "menu.contact"
 url  = "/contact"
 weight = 2
 
-[[menu.main]]
+[[languages.pl.menu.main]]
 name = "Oferta"
 identifier = "menu.products"
 url = "/products"
 weight = 3
 
-[[menu.main]]
+[[languages.pl.menu.main]]
 name = "Miniładowarki"
 url = "/miniloaders"
 parent = "menu.products"
 
-[[menu.topbar]]
+[[languages.pl.menu.topbar]]
 weight = 1
-name = "Telefon"
+name = "Phone"
 url = "tel:+48 512 029 887"
 pre = "<i class='fas fa-2x fa-phone'></i>"
 
-[[menu.topbar]]
+[[languages.pl.menu.topbar]]
 weight = 2
 name = "Email"
 url = "mailto:kontakt@ehan.pl"
 pre = "<i class='fas fa-2x fa-envelope'></i>"
 
-[[menu.topbar]]
+[[languages.pl.menu.topbar]]
+weight = 3
+name = "Facebook"
+url = "http://facebook.com/pwehan"
+pre = "<i class='fab fa-2x fa-facebook'></i>"
+
+[languages.en.menu]
+
+[[languages.en.menu.main]]
+name = "HOME"
+identifier = "menu.home"
+url = "/"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Contact"
+identifier = "menu.contact"
+url  = "/en/contact"
+weight = 2
+
+[[languages.en.menu.main]]
+name = "Products"
+identifier = "menu.products"
+url = "/en/products"
+weight = 3
+
+[[languages.en.menu.main]]
+name = "Miniloaders"
+url = "/en/miniloaders"
+parent = "menu.products"
+
+[[languages.en.menu.topbar]]
+weight = 1
+name = "Phone"
+url = "tel:+48 512 029 887"
+pre = "<i class='fas fa-2x fa-phone'></i>"
+
+[[languages.en.menu.topbar]]
+weight = 2
+name = "Email"
+url = "mailto:kontakt@ehan.pl"
+pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+[[languages.en.menu.topbar]]
 weight = 3
 name = "Facebook"
 url = "http://facebook.com/pwehan"
@@ -106,10 +180,18 @@ pagination_speed = 1000
 enable = true
 cols = 2
 
-[params.see_more]
+[languages.pl.params.see_more]
 enable = true
 icon = "far fa-envelope"
 title = "Dowiedz się więcej"
 subtitle = "Chętnie odpowiemy na Twoje pytania i pomożemy w każdej sprawie."
 link_url = "/contact"
 link_text = "Kontakt"
+
+[languages.en.params.see_more]
+enable = true
+icon = "far fa-envelope"
+title = "Learn more"
+subtitle = "We will be happy to answer your questions and help you with any matter."
+link_url = "/en/contact"
+link_text = "Contact"
