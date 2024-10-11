@@ -71,7 +71,7 @@
   translation: "Błąd 404: nie znaleziono strony"
 
 - id: 404Message
-  translation: "Przepraszamy – ta strona nie jest już tu dostępna"
+  translation: "Przepraszamy – ta strona nie jest dostępna"
 
 - id: 404NavHome
   translation: "Przejdź do strony głównej"
